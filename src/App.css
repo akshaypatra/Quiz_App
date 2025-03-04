@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  -webkit-user-select: none; /* Disable selection for Webkit browsers */
+  -moz-user-select: none; /* Disable selection for Mozilla browsers */
+  -ms-user-select: none; /* Disable selection for IE/Edge */
+  user-select: none;
+}
+
+.quiz-container {
+  background: #ffffff;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  user-select: none;
+}
+
+h1 {
+  color: #333;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: 0.3s;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.timer {
+  font-size: 18px;
+  color: #ff4d4d;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.quiz-question {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+  margin: 15px 0;
+  user-select: none;
+}
+
+.option-button {
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option-button:hover {
+  background: #007BFF;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.quiz-rules {
+  font-size: 16px;
+  text-align: left;
+  padding: 10px;
+  background: #e9ecef;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  color: #28a745;
+  margin: 20px 0;
 }
