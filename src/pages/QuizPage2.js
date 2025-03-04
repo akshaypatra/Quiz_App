@@ -11,7 +11,7 @@ const quizQuestions = [
   { question: "What is the square root of 64?", options: ["6", "7", "8", "9"], answer: "8" },
   { question: "Which element has the chemical symbol 'O'?", options: ["Gold", "Oxygen", "Silver", "Hydrogen"], answer: "Oxygen" },
   { question: "What is the capital of Japan?", options: ["Beijing", "Seoul", "Tokyo", "Bangkok"], answer: "Tokyo" },
-  { question: "How many continents are there on Earth?", options: ["5", "6", "7", "8"], answer: "7" }
+  { question: "How many continents are there on Earth?", options: ["5", "10", "7", "8"], answer: "7" }
 ];
 
 const QuizPage2 = () => {
