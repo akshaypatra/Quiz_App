@@ -2,60 +2,64 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-  {
-    question: "Which bird is often associated with delivering babies?",
-    options: ["Eagle", "Owl", "Raven", "Stork"],
-    answer: "Stork"
-  },
-  {
-    question: "What do you call a group of owls?",
-    options: ["Herd", "Pack", "School", "Parliament"],
-    answer: "Parliament"
-  },
-  {
-    question: "What is the common term for the substance that makes your eyes water when you cut an onion?",
-    options: ["Acid", "Salt", "Gas", "Sugar"],
-    answer: "Gas"
-  },
-  {
-    question: "What do you call a baby swan?",
-    options: ["Cygnet", "Fawn", "Kid", "Chick"],
-    answer: "Chick"
-  },
-  {
-    question: "Where does a polar bear live?",
-    options: ["South Pole", "Antarctica", "Arctic", "Jungle"],
-    answer: "Arctic"
-  },
-  {
-    question: "Which fruit is technically a berry, but is often considered a vegetable?",
-    options: ["Apple", "Orange", "Banana", "Tomato"],
-    answer: "Tomato"
-  },
-  {
-    question: "What part of the body continues to grow for your entire life?",
-    options: ["Legs", "Arms", "Heart", "Ears and Nose"],
-    answer: "Ears and Nose"
-  },
-  {
-    question: "What is the name of the white part of an egg?",
-    options: ["Yolk", "Shell", "Membrane", "Albumen"],
-    answer: "Albumen"
-  },
-  {
-    question: "Which financial metric measures a company's profitability relative to its revenue?",
-    options: ["Market Cap", "Gross Margin", "Return on Equity (ROE)", "Earnings Per Share (EPS)"],
-    answer: "Gross Margin"
-  },
-  {
-    question: "Which organization regulates the securities market in India?",
-    options: ["Reserve Bank of India (RBI)", "Securities and Exchange Board of India (SEBI)", "Ministry of Finance", "Bombay Stock Exchange (BSE)"],
-    answer: "Securities and Exchange Board of India (SEBI)"
-  }
-];
+    {
+      question: "What is the name of India's first satellite?",
+      options: ["Chandrayaan-1", "Mangalyaan", "Aryabhata", "INSAT-1A"],
+      answer: "Aryabhata"
+    },
+    {
+      question: "Which Indian company manufactures fighter jets like Tejas?",
+      options: ["ISRO", "DRDO", "HAL", "BHEL"],
+      answer: "HAL"
+    },
+    {
+      question: "Which aircraft company manufactures the Boeing 737?",
+      options: ["Boeing", "Airbus", "Lockheed Martin", "Northrop Grumman"],
+      answer: "Boeing"
+    },
+    {
+      question: "What does GPS stand for?",
+      options: ["Global Positioning Satellite", "General Processing System", "Geographic Path Service", "Global Positioning System"],
+      answer: "Global Positioning System"
+    },
+    {
+      question: "Which country developed the Rafale fighter jet?",
+      options: ["USA", "Russia", "France", "Germany"],
+      answer: "France"
+    },
+    {
+      question: "Which space agency successfully landed a rover on Mars first?",
+      options: ["NASA", "ISRO", "CNSA", "ESA"],
+      answer: "NASA"
+    },
+    {
+      question: "Which Indian space mission reached Mars on its first attempt?",
+      options: ["Chandrayaan-1", "Mangalyaan", "Gaganyaan", "PSLV-C37"],
+      answer: "Mangalyaan"
+    },
+    {
+      question: "Which company is known as the ‘Big Blue’?",
+      options: ["Google", "IBM", "Microsoft", "Facebook"],
+      answer: "IBM"
+    },
+    {
+      question: "Which famous entrepreneur said, 'Your most unhappy customers are your greatest source of learning'?",
+      options: ["Steve Jobs", "Bill Gates", "Jeff Bezos", "Mark Zuckerberg"],
+      answer: "Bill Gates"
+    },
+    {
+      question: "Which company developed the first smartphone?",
+      options: ["Apple", "Nokia", "IBM", "Samsung"],
+      answer: "IBM"
+    }
+  ];
+  
+  
+  
+  
 
 
-const QuizPage2 = () => {
+const QuizPage10 = () => {
   const [name, setName] = useState("");
   const [step, setStep] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -68,7 +72,7 @@ const QuizPage2 = () => {
   // eslint-disable-next-line
   const [quizDuration, setQuizDuration] = useState("");
   
-  const slot = "Slot 2"; // Default slot
+  const slot = "Slot 10"; // Default slot
   
   const emailSentRef = useRef(false);
 
@@ -207,4 +211,4 @@ const QuizPage2 = () => {
   );
 };
 
-export default QuizPage2;
+export default QuizPage10;

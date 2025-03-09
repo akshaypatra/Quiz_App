@@ -2,60 +2,72 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-  {
-    question: "Which bird is often associated with delivering babies?",
-    options: ["Eagle", "Owl", "Raven", "Stork"],
-    answer: "Stork"
-  },
-  {
-    question: "What do you call a group of owls?",
-    options: ["Herd", "Pack", "School", "Parliament"],
-    answer: "Parliament"
-  },
-  {
-    question: "What is the common term for the substance that makes your eyes water when you cut an onion?",
-    options: ["Acid", "Salt", "Gas", "Sugar"],
-    answer: "Gas"
-  },
-  {
-    question: "What do you call a baby swan?",
-    options: ["Cygnet", "Fawn", "Kid", "Chick"],
-    answer: "Chick"
-  },
-  {
-    question: "Where does a polar bear live?",
-    options: ["South Pole", "Antarctica", "Arctic", "Jungle"],
-    answer: "Arctic"
-  },
-  {
-    question: "Which fruit is technically a berry, but is often considered a vegetable?",
-    options: ["Apple", "Orange", "Banana", "Tomato"],
-    answer: "Tomato"
-  },
-  {
-    question: "What part of the body continues to grow for your entire life?",
-    options: ["Legs", "Arms", "Heart", "Ears and Nose"],
-    answer: "Ears and Nose"
-  },
-  {
-    question: "What is the name of the white part of an egg?",
-    options: ["Yolk", "Shell", "Membrane", "Albumen"],
-    answer: "Albumen"
-  },
-  {
-    question: "Which financial metric measures a company's profitability relative to its revenue?",
-    options: ["Market Cap", "Gross Margin", "Return on Equity (ROE)", "Earnings Per Share (EPS)"],
-    answer: "Gross Margin"
-  },
-  {
-    question: "Which organization regulates the securities market in India?",
-    options: ["Reserve Bank of India (RBI)", "Securities and Exchange Board of India (SEBI)", "Ministry of Finance", "Bombay Stock Exchange (BSE)"],
-    answer: "Securities and Exchange Board of India (SEBI)"
-  }
-];
+    {
+      question: "What has no feet, but can travel around the world?",
+      options: ["A thought", "A rumor", "A letter", "A wind"],
+      answer: "A letter"
+    },
+    {
+      question: "What is always hungry, it must always be fed, the finger you touch, will soon turn red?",
+      options: ["A fire", "A baby", "A dragon", "A stove"],
+      answer: "A fire"
+    },
+    {
+      question: "What has no substance, but can still be seen?",
+      options: ["A ghost", "A shadow", "A dream", "A thought"],
+      answer: "A shadow"
+    },
+    {
+      question: "What is the only thing that can be both given and kept?",
+      options: ["A gift", "A secret", "A promise", "Advice"],
+      answer: "A promise"
+    },
+    {
+      question: "What has an ear but cannot hear?",
+      options: ["A cornfield", "A jug", "A phone", "A rabbit"],
+      answer: "A cornfield"
+    },
+    {
+      question: "What has a tongue but cannot taste?",
+      options: ["A shoe", "A bell", "A flame", "A river"],
+      answer: "A shoe"
+    },
+    {
+      question: "What gets bigger the more you take away?",
+      options: ["A hole", "A debt", "A balloon", "A shadow"],
+      answer: "A hole"
+    },
+    {
+      question: "What is the thing that you can't see but is always in front of you?",
+      options: ["The future", "The wind", "Your nose", "A ghost"],
+      answer: "The future"
+    },
+    {
+      question: "What does the term 'escape velocity' mean?",
+      options: [
+        "The speed at which a rocket leaves the atmosphere",
+        "The minimum velocity required to leave a planet's gravitational pull",
+        "The maximum velocity of a space shuttle",
+        "The speed needed to enter orbit"
+      ],
+      answer: "The minimum velocity required to leave a planet's gravitational pull"
+    },
+    {
+      question: "What is the role of a satellite's 'payload'?",
+      options: [
+        "Provide navigation",
+        "Carry instruments for its mission purpose",
+        "Measure fuel levels",
+        "Ensure communication with Earth"
+      ],
+      answer: "Carry instruments for its mission purpose"
+    }
+  ];
+  
+  
 
 
-const QuizPage2 = () => {
+const QuizPage5 = () => {
   const [name, setName] = useState("");
   const [step, setStep] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -68,7 +80,7 @@ const QuizPage2 = () => {
   // eslint-disable-next-line
   const [quizDuration, setQuizDuration] = useState("");
   
-  const slot = "Slot 2"; // Default slot
+  const slot = "Slot 5"; // Default slot
   
   const emailSentRef = useRef(false);
 
@@ -207,4 +219,4 @@ const QuizPage2 = () => {
   );
 };
 
-export default QuizPage2;
+export default QuizPage5;

@@ -2,60 +2,64 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-  {
-    question: "Which bird is often associated with delivering babies?",
-    options: ["Eagle", "Owl", "Raven", "Stork"],
-    answer: "Stork"
-  },
-  {
-    question: "What do you call a group of owls?",
-    options: ["Herd", "Pack", "School", "Parliament"],
-    answer: "Parliament"
-  },
-  {
-    question: "What is the common term for the substance that makes your eyes water when you cut an onion?",
-    options: ["Acid", "Salt", "Gas", "Sugar"],
-    answer: "Gas"
-  },
-  {
-    question: "What do you call a baby swan?",
-    options: ["Cygnet", "Fawn", "Kid", "Chick"],
-    answer: "Chick"
-  },
-  {
-    question: "Where does a polar bear live?",
-    options: ["South Pole", "Antarctica", "Arctic", "Jungle"],
-    answer: "Arctic"
-  },
-  {
-    question: "Which fruit is technically a berry, but is often considered a vegetable?",
-    options: ["Apple", "Orange", "Banana", "Tomato"],
-    answer: "Tomato"
-  },
-  {
-    question: "What part of the body continues to grow for your entire life?",
-    options: ["Legs", "Arms", "Heart", "Ears and Nose"],
-    answer: "Ears and Nose"
-  },
-  {
-    question: "What is the name of the white part of an egg?",
-    options: ["Yolk", "Shell", "Membrane", "Albumen"],
-    answer: "Albumen"
-  },
-  {
-    question: "Which financial metric measures a company's profitability relative to its revenue?",
-    options: ["Market Cap", "Gross Margin", "Return on Equity (ROE)", "Earnings Per Share (EPS)"],
-    answer: "Gross Margin"
-  },
-  {
-    question: "Which organization regulates the securities market in India?",
-    options: ["Reserve Bank of India (RBI)", "Securities and Exchange Board of India (SEBI)", "Ministry of Finance", "Bombay Stock Exchange (BSE)"],
-    answer: "Securities and Exchange Board of India (SEBI)"
-  }
-];
+    {
+      question: "What does a 'bull market' indicate?",
+      options: ["Stock prices are falling", "Stock prices are rising", "Stock prices are stagnant", "The market is volatile"],
+      answer: "Stock prices are rising"
+    },
+    {
+      question: "Which regulatory body oversees the stock market in India?",
+      options: ["SEBI", "RBI", "NSE", "BSE"],
+      answer: "SEBI"
+    },
+    {
+      question: "Which company became India's first listed unicorn?",
+      options: ["Zomato", "Flipkart", "Paytm", "Nykaa"],
+      answer: "Zomato"
+    },
+    {
+      question: "Which of these metals is often considered a safe-haven investment?",
+      options: ["Copper", "Silver", "Gold", "Aluminum"],
+      answer: "Gold"
+    },
+    {
+      question: "What is the term for a period of extended economic decline?",
+      options: ["Inflation", "Stagnation", "Recession", "Depression"],
+      answer: "Depression"
+    },
+    {
+      question: "What does P/E ratio stand for in stock market analysis?",
+      options: ["Price/Earnings", "Profit/Equity", "Public/Enterprise", "Portfolio/Expense"],
+      answer: "Price/Earnings"
+    },
+    {
+      question: "Which of these is a cryptocurrency?",
+      options: ["Bitcoin", "PayPal", "Visa", "MasterCard"],
+      answer: "Bitcoin"
+    },
+    {
+      question: "Which company was the first to successfully launch a reusable rocket?",
+      options: ["NASA", "SpaceX", "ISRO", "Blue Origin"],
+      answer: "SpaceX"
+    },
+    {
+      question: "Which country was the first to send a human to space?",
+      options: ["USA", "Russia", "China", "Germany"],
+      answer: "Russia"
+    },
+    {
+      question: "Who was the first person to walk on the moon?",
+      options: ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "John Glenn"],
+      answer: "Neil Armstrong"
+    }
+  ];
+  
+  
+  
+  
 
 
-const QuizPage2 = () => {
+const QuizPage9 = () => {
   const [name, setName] = useState("");
   const [step, setStep] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -68,7 +72,7 @@ const QuizPage2 = () => {
   // eslint-disable-next-line
   const [quizDuration, setQuizDuration] = useState("");
   
-  const slot = "Slot 2"; // Default slot
+  const slot = "Slot 9"; // Default slot
   
   const emailSentRef = useRef(false);
 
@@ -207,4 +211,4 @@ const QuizPage2 = () => {
   );
 };
 
-export default QuizPage2;
+export default QuizPage9;

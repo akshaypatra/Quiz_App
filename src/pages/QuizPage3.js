@@ -2,60 +2,71 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-  {
-    question: "Which bird is often associated with delivering babies?",
-    options: ["Eagle", "Owl", "Raven", "Stork"],
-    answer: "Stork"
-  },
-  {
-    question: "What do you call a group of owls?",
-    options: ["Herd", "Pack", "School", "Parliament"],
-    answer: "Parliament"
-  },
-  {
-    question: "What is the common term for the substance that makes your eyes water when you cut an onion?",
-    options: ["Acid", "Salt", "Gas", "Sugar"],
-    answer: "Gas"
-  },
-  {
-    question: "What do you call a baby swan?",
-    options: ["Cygnet", "Fawn", "Kid", "Chick"],
-    answer: "Chick"
-  },
-  {
-    question: "Where does a polar bear live?",
-    options: ["South Pole", "Antarctica", "Arctic", "Jungle"],
-    answer: "Arctic"
-  },
-  {
-    question: "Which fruit is technically a berry, but is often considered a vegetable?",
-    options: ["Apple", "Orange", "Banana", "Tomato"],
-    answer: "Tomato"
-  },
-  {
-    question: "What part of the body continues to grow for your entire life?",
-    options: ["Legs", "Arms", "Heart", "Ears and Nose"],
-    answer: "Ears and Nose"
-  },
-  {
-    question: "What is the name of the white part of an egg?",
-    options: ["Yolk", "Shell", "Membrane", "Albumen"],
-    answer: "Albumen"
-  },
-  {
-    question: "Which financial metric measures a company's profitability relative to its revenue?",
-    options: ["Market Cap", "Gross Margin", "Return on Equity (ROE)", "Earnings Per Share (EPS)"],
-    answer: "Gross Margin"
-  },
-  {
-    question: "Which organization regulates the securities market in India?",
-    options: ["Reserve Bank of India (RBI)", "Securities and Exchange Board of India (SEBI)", "Ministry of Finance", "Bombay Stock Exchange (BSE)"],
-    answer: "Securities and Exchange Board of India (SEBI)"
-  }
-];
+    {
+      question: "What is the name of the small piece of plastic on the end of a shoelace?",
+      options: ["Tip", "Tag", "End", "Aglet"],
+      answer: "Aglet"
+    },
+    {
+      question: "Which animal is known as the 'ship of the desert'?",
+      options: ["Horse", "Donkey", "Elephant", "Camel"],
+      answer: "Camel"
+    },
+    {
+      question: "What is the name of the dot over the lowercase 'i' and 'j'?",
+      options: ["Point", "Dot", "Mark", "Tittle"],
+      answer: "Tittle"
+    },
+    {
+      question: "What is a group of crows called?",
+      options: ["Pack", "Herd", "Flock", "Murder"],
+      answer: "Murder"
+    },
+    {
+      question: "What do you call the space between your eyebrows?",
+      options: ["Forehead", "Bridge", "Temple", "Glabella"],
+      answer: "Glabella"
+    },
+    {
+      question: "What is the name of the part of a fork that you use to stab food?",
+      options: ["Handle", "Head", "Body", "Tines"],
+      answer: "Tines"
+    },
+    {
+      question: "What is the name of the small pocket inside the larger jeans pocket?",
+      options: ["Coin pocket", "Key pocket", "Watch pocket", "All of the above"],
+      answer: "All of the above"
+    },
+    {
+      question: "What is the difference between 'affect' and 'effect'?",
+      options: [
+        "Both are nouns",
+        "Both are verbs",
+        "Affect is a noun, effect is a verb",
+        "Affect is a verb, effect is a noun"
+      ],
+      answer: "Affect is a verb, effect is a noun"
+    },
+    {
+      question: "What does an increase in bond yields typically indicate about the economy?",
+      options: [
+        "A recession is coming",
+        "Higher inflation expectations",
+        "Lower interest rates",
+        "Government reducing borrowing"
+      ],
+      answer: "Higher inflation expectations"
+    },
+    {
+      question: "What was the name of the first artificial satellite launched into space?",
+      options: ["Voyager 1", "Sputnik 1", "Apollo 11", "Explorer 1"],
+      answer: "Sputnik 1"
+    }
+  ];
+  
 
 
-const QuizPage2 = () => {
+const QuizPage3 = () => {
   const [name, setName] = useState("");
   const [step, setStep] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -68,7 +79,7 @@ const QuizPage2 = () => {
   // eslint-disable-next-line
   const [quizDuration, setQuizDuration] = useState("");
   
-  const slot = "Slot 2"; // Default slot
+  const slot = "Slot 3"; // Default slot
   
   const emailSentRef = useRef(false);
 
@@ -207,4 +218,4 @@ const QuizPage2 = () => {
   );
 };
 
-export default QuizPage2;
+export default QuizPage3;

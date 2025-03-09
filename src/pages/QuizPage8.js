@@ -3,59 +3,69 @@ import emailjs from "emailjs-com";
 
 const quizQuestions = [
   {
-    question: "Which bird is often associated with delivering babies?",
-    options: ["Eagle", "Owl", "Raven", "Stork"],
-    answer: "Stork"
+    question: "Which airline was the first to introduce commercial jet travel?",
+    options: ["Lufthansa", "British Airways", "Pan American", "Boeing"],
+    answer: "British Airways"
   },
   {
-    question: "What do you call a group of owls?",
-    options: ["Herd", "Pack", "School", "Parliament"],
-    answer: "Parliament"
+    question: "Who co-founded YouTube?",
+    options: ["Larry Page", "Steve Chen", "Mark Zuckerberg", "Sundar Pichai"],
+    answer: "Steve Chen"
   },
   {
-    question: "What is the common term for the substance that makes your eyes water when you cut an onion?",
-    options: ["Acid", "Salt", "Gas", "Sugar"],
-    answer: "Gas"
+    question: "Which Indian billionaire is the founder of the Adani Group?",
+    options: ["Ratan Tata", "Gautam Adani", "Mukesh Ambani", "Narayana Murthy"],
+    answer: "Gautam Adani"
   },
   {
-    question: "What do you call a baby swan?",
-    options: ["Cygnet", "Fawn", "Kid", "Chick"],
-    answer: "Chick"
+    question: "Which tech company acquired Instagram?",
+    options: ["Google", "Twitter", "Facebook", "Apple"],
+    answer: "Facebook"
   },
   {
-    question: "Where does a polar bear live?",
-    options: ["South Pole", "Antarctica", "Arctic", "Jungle"],
-    answer: "Arctic"
+    question: "Which luxury brand owns Lamborghini?",
+    options: ["Ferrari", "Volkswagen", "Porsche", "Mercedes-Benz"],
+    answer: "Volkswagen"
   },
   {
-    question: "Which fruit is technically a berry, but is often considered a vegetable?",
-    options: ["Apple", "Orange", "Banana", "Tomato"],
-    answer: "Tomato"
+    question: "Which e-commerce company acquired Whole Foods in 2017?",
+    options: ["Walmart", "Amazon", "Target", "eBay"],
+    answer: "Amazon"
   },
   {
-    question: "What part of the body continues to grow for your entire life?",
-    options: ["Legs", "Arms", "Heart", "Ears and Nose"],
-    answer: "Ears and Nose"
+    question: "Who is the founder of Microsoft?",
+    options: ["Steve Jobs", "Elon Musk", "Bill Gates", "Jeff Bezos"],
+    answer: "Bill Gates"
   },
   {
-    question: "What is the name of the white part of an egg?",
-    options: ["Yolk", "Shell", "Membrane", "Albumen"],
-    answer: "Albumen"
+    question: "Which Indian stock exchange is the oldest in Asia?",
+    options: ["National Stock Exchange (NSE)", "Bombay Stock Exchange (BSE)", "Tokyo Stock Exchange", "Hong Kong Stock Exchange"],
+    answer: "Bombay Stock Exchange (BSE)"
   },
   {
-    question: "Which financial metric measures a company's profitability relative to its revenue?",
-    options: ["Market Cap", "Gross Margin", "Return on Equity (ROE)", "Earnings Per Share (EPS)"],
-    answer: "Gross Margin"
+    question: "Which of the following is NOT a stock market index?",
+    options: ["Sensex", "NIFTY 50", "S&P 500", "IMF 100"],
+    answer: "IMF 100"
   },
   {
-    question: "Which organization regulates the securities market in India?",
-    options: ["Reserve Bank of India (RBI)", "Securities and Exchange Board of India (SEBI)", "Ministry of Finance", "Bombay Stock Exchange (BSE)"],
-    answer: "Securities and Exchange Board of India (SEBI)"
+    question: "In stock trading, what does ‘short selling’ mean?",
+    options: [
+      "Buying shares at a low price and selling at a high price",
+      "Selling shares first and buying them later at a lower price",
+      "Selling stocks after holding them for years",
+      "Trading stocks with minimal profit"
+    ],
+    answer: "Selling shares first and buying them later at a lower price"
   }
 ];
 
+  
+  
+  
+  
 
-const QuizPage2 = () => {
+
+const QuizPage8 = () => {
   const [name, setName] = useState("");
   const [step, setStep] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -68,7 +78,7 @@ const QuizPage2 = () => {
   // eslint-disable-next-line
   const [quizDuration, setQuizDuration] = useState("");
   
-  const slot = "Slot 2"; // Default slot
+  const slot = "Slot 8"; // Default slot
   
   const emailSentRef = useRef(false);
 
@@ -207,4 +217,4 @@ const QuizPage2 = () => {
   );
 };
 
-export default QuizPage2;
+export default QuizPage8;

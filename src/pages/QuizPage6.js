@@ -2,60 +2,73 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-  {
-    question: "Which bird is often associated with delivering babies?",
-    options: ["Eagle", "Owl", "Raven", "Stork"],
-    answer: "Stork"
-  },
-  {
-    question: "What do you call a group of owls?",
-    options: ["Herd", "Pack", "School", "Parliament"],
-    answer: "Parliament"
-  },
-  {
-    question: "What is the common term for the substance that makes your eyes water when you cut an onion?",
-    options: ["Acid", "Salt", "Gas", "Sugar"],
-    answer: "Gas"
-  },
-  {
-    question: "What do you call a baby swan?",
-    options: ["Cygnet", "Fawn", "Kid", "Chick"],
-    answer: "Chick"
-  },
-  {
-    question: "Where does a polar bear live?",
-    options: ["South Pole", "Antarctica", "Arctic", "Jungle"],
-    answer: "Arctic"
-  },
-  {
-    question: "Which fruit is technically a berry, but is often considered a vegetable?",
-    options: ["Apple", "Orange", "Banana", "Tomato"],
-    answer: "Tomato"
-  },
-  {
-    question: "What part of the body continues to grow for your entire life?",
-    options: ["Legs", "Arms", "Heart", "Ears and Nose"],
-    answer: "Ears and Nose"
-  },
-  {
-    question: "What is the name of the white part of an egg?",
-    options: ["Yolk", "Shell", "Membrane", "Albumen"],
-    answer: "Albumen"
-  },
-  {
-    question: "Which financial metric measures a company's profitability relative to its revenue?",
-    options: ["Market Cap", "Gross Margin", "Return on Equity (ROE)", "Earnings Per Share (EPS)"],
-    answer: "Gross Margin"
-  },
-  {
-    question: "Which organization regulates the securities market in India?",
-    options: ["Reserve Bank of India (RBI)", "Securities and Exchange Board of India (SEBI)", "Ministry of Finance", "Bombay Stock Exchange (BSE)"],
-    answer: "Securities and Exchange Board of India (SEBI)"
-  }
-];
+    {
+      question: "If five cats can catch five mice in five minutes, how many cats does it take to catch 100 mice in 100 minutes?",
+      options: ["5", "20", "100", "10"],
+      answer: "5"
+    },
+    {
+      question: "How many times can you subtract the number 5 from 25?",
+      options: ["5", "1", "Infinite", "0"],
+      answer: "1"
+    },
+    {
+      question: "If you divide 30 by half and add ten, what do you get?",
+      options: ["25", "70", "55", "40"],
+      answer: "70"
+    },
+    {
+      question: "If there are 12 fish and half of them drown, how many are there?",
+      options: ["0", "6", "12", "3"],
+      answer: "12"
+    },
+    {
+      question: "A farmer has 17 sheep, and all but nine die. How many does he have left?",
+      options: ["8", "9", "17", "0"],
+      answer: "9"
+    },
+    {
+      question: "If you have two coins totaling 35 cents, and one of them is not a dime, what are the two coins?",
+      options: ["25 and 10", "30 and 5", "20 and 15", "25 and 10 (again)"],
+      answer: "25 and 10"
+    },
+    {
+      question: "If a brick weighs a pound and half a brick, how much does the brick weigh?",
+      options: ["1.5 pounds", "2 pounds", "1 pound", "3 pounds"],
+      answer: "2 pounds"
+    },
+    {
+      question: "If you multiply all the numbers on a telephone's number pad, what do you get?",
+      options: ["A large number", "0", "45", "362880"],
+      answer: "0"
+    },
+    {
+      question: "What is the purpose of a central bank, like the Reserve Bank of India?",
+      options: [
+        "Regulate commercial banks and issue currency",
+        "Provide loans to small businesses",
+        "Set stock market rules",
+        "Handle foreign direct investments"
+      ],
+      answer: "Regulate commercial banks and issue currency"
+    },
+    {
+      question: "What does 'liquidity' mean in financial terms?",
+      options: [
+        "The ability to convert an asset to cash quickly",
+        "The amount of cash in a company's reserves",
+        "The process of merging companies",
+        "The total debt of an organization"
+      ],
+      answer: "The ability to convert an asset to cash quickly"
+    }
+  ];
+  
+  
+  
 
 
-const QuizPage2 = () => {
+const QuizPage6 = () => {
   const [name, setName] = useState("");
   const [step, setStep] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -68,7 +81,7 @@ const QuizPage2 = () => {
   // eslint-disable-next-line
   const [quizDuration, setQuizDuration] = useState("");
   
-  const slot = "Slot 2"; // Default slot
+  const slot = "Slot 6"; // Default slot
   
   const emailSentRef = useRef(false);
 
@@ -207,4 +220,4 @@ const QuizPage2 = () => {
   );
 };
 
-export default QuizPage2;
+export default QuizPage6;

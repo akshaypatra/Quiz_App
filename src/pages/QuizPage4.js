@@ -2,60 +2,62 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-  {
-    question: "Which bird is often associated with delivering babies?",
-    options: ["Eagle", "Owl", "Raven", "Stork"],
-    answer: "Stork"
-  },
-  {
-    question: "What do you call a group of owls?",
-    options: ["Herd", "Pack", "School", "Parliament"],
-    answer: "Parliament"
-  },
-  {
-    question: "What is the common term for the substance that makes your eyes water when you cut an onion?",
-    options: ["Acid", "Salt", "Gas", "Sugar"],
-    answer: "Gas"
-  },
-  {
-    question: "What do you call a baby swan?",
-    options: ["Cygnet", "Fawn", "Kid", "Chick"],
-    answer: "Chick"
-  },
-  {
-    question: "Where does a polar bear live?",
-    options: ["South Pole", "Antarctica", "Arctic", "Jungle"],
-    answer: "Arctic"
-  },
-  {
-    question: "Which fruit is technically a berry, but is often considered a vegetable?",
-    options: ["Apple", "Orange", "Banana", "Tomato"],
-    answer: "Tomato"
-  },
-  {
-    question: "What part of the body continues to grow for your entire life?",
-    options: ["Legs", "Arms", "Heart", "Ears and Nose"],
-    answer: "Ears and Nose"
-  },
-  {
-    question: "What is the name of the white part of an egg?",
-    options: ["Yolk", "Shell", "Membrane", "Albumen"],
-    answer: "Albumen"
-  },
-  {
-    question: "Which financial metric measures a company's profitability relative to its revenue?",
-    options: ["Market Cap", "Gross Margin", "Return on Equity (ROE)", "Earnings Per Share (EPS)"],
-    answer: "Gross Margin"
-  },
-  {
-    question: "Which organization regulates the securities market in India?",
-    options: ["Reserve Bank of India (RBI)", "Securities and Exchange Board of India (SEBI)", "Ministry of Finance", "Bombay Stock Exchange (BSE)"],
-    answer: "Securities and Exchange Board of India (SEBI)"
-  }
-];
+    {
+      question: "What is a 'palindrome'?",
+      options: ["A type of insect", "A type of flower", "A word that reads the same backward as forward", "A word that reads the same backward as forward"],
+      answer: "A word that reads the same backward as forward"
+    },
+    {
+      question: "What does the word 'ubiquitous' mean?",
+      options: ["Rare", "Unique", "Common", "Everywhere"],
+      answer: "Everywhere"
+    },
+    {
+      question: "What is an 'oxymoron'?",
+      options: ["A type of animal", "A type of plant", "A figure of speech that contradicts itself", "A figure of speech that contradicts itself"],
+      answer: "A figure of speech that contradicts itself"
+    },
+    {
+      question: "What is the meaning of 'ambiguous'?",
+      options: ["Clear", "Simple", "Unclear", "Unclear"],
+      answer: "Unclear"
+    },
+    {
+      question: "Who was the first person to set foot on the moon?",
+      options: ["Yuri Gagarin", "Neil Armstrong", "Buzz Aldrin", "Alan Shepard"],
+      answer: "Neil Armstrong"
+    },
+    {
+      question: "Which country's space agency is known as Roscosmos?",
+      options: ["USA", "Russia", "China", "Japan"],
+      answer: "Russia"
+    },
+    {
+      question: "What is a 'simile'?",
+      options: ["A type of poem", "A type of song", "A comparison using 'like' or 'as'", "A comparison using 'like' or 'as'"],
+      answer: "A comparison using 'like' or 'as'"
+    },
+    {
+      question: "If you have two coins totalling 35 cents, and one of them is not a dime, what are the two coins?",
+      options: ["25 and 10", "30 and 5", "20 and 15", "25 and 20"],
+      answer: "25 and 10"
+    },
+    {
+      question: "What has a head and a tail, but no body?",
+      options: ["A coin", "A snake", "A fish", "A rope"],
+      answer: "A coin"
+    },
+    {
+      question: "What has one horn and one eye?",
+      options: ["A rhinoceros", "A unicorn", "A cyclops", "A bicycle"],
+      answer: "A cyclops"
+    }
+  ];
+  
+  
 
 
-const QuizPage2 = () => {
+const QuizPage4 = () => {
   const [name, setName] = useState("");
   const [step, setStep] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -68,7 +70,7 @@ const QuizPage2 = () => {
   // eslint-disable-next-line
   const [quizDuration, setQuizDuration] = useState("");
   
-  const slot = "Slot 2"; // Default slot
+  const slot = "Slot 4"; // Default slot
   
   const emailSentRef = useRef(false);
 
@@ -207,4 +209,4 @@ const QuizPage2 = () => {
   );
 };
 
-export default QuizPage2;
+export default QuizPage4;

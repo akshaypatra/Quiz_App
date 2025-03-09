@@ -2,17 +2,68 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-  { question: "What does CEO stand for?", options: ["Chief Executive Officer", "Corporate Enterprise Organizer", "Chief Economic Officer", "Company Equity Owner"], answer: "Chief Executive Officer" },
-  { question: "Which financial statement shows a company's revenue and expenses?", options: ["Balance Sheet", "Income Statement", "Cash Flow Statement", "Equity Statement"], answer: "Income Statement" },
-  { question: "What is the primary goal of a business?", options: ["Maximize profits", "Create jobs", "Expand globally", "Reduce competition"], answer: "Maximize profits" },
-  { question: "Which marketing strategy involves paying for advertisements?", options: ["Organic Marketing", "Inbound Marketing", "Paid Marketing", "Viral Marketing"], answer: "Paid Marketing" },
-  { question: "What does ROI stand for in business?", options: ["Return on Investment", "Rate of Inflation", "Revenue over Income", "Return of Interest"], answer: "Return on Investment" },
-  { question: "What is the term for the total value of goods and services produced in a country?", options: ["GNP", "GDP", "Net Worth", "Profit Margin"], answer: "GDP" },
-  { question: "Which of the following is a liability for a business?", options: ["Cash", "Inventory", "Loans", "Equipment"], answer: "Loans" },
-  { question: "What is the process of setting a price for a product or service?", options: ["Marketing", "Branding", "Pricing", "Promotion"], answer: "Pricing" },
-  { question: "Which department is responsible for hiring employees?", options: ["Finance", "Marketing", "HR", "Operations"], answer: "HR" },
-  { question: "What is a company's unique symbol, name, or design that identifies its products?", options: ["Copyright", "Patent", "Trademark", "Brand"], answer: "Trademark" }
+  {
+    question: "Which layer of the Earth is made up of solid rock?",
+    options: ["Outer core", "Inner core", "Mantle", "Crust"],
+    answer: "Crust"
+  },
+  {
+    question: "What is the largest bone in the human body?",
+    options: ["Humerus", "Tibia", "Radius", "Femur"],
+    answer: "Femur"
+  },
+  {
+    question: "Who was the first female Prime Minister of the United Kingdom?",
+    options: ["Angela Merkel", "Indira Gandhi", "Golda Meir", "Margaret Thatcher"],
+    answer: "Margaret Thatcher"
+  },
+  {
+    question: "What is the capital of Australia?",
+    options: ["Sydney", "Melbourne", "Canberra", "Perth"],
+    answer: "Canberra"
+  },
+  {
+    question: "Which country is known as the 'Land of the Rising Sun'?",
+    options: ["China", "Korea", "Japan", "Thailand"],
+    answer: "Japan"
+  },
+  {
+    question: "What is the largest desert in the world (by area)?",
+    options: ["Sahara Desert", "Arabian Desert", "Gobi Desert", "Antarctic Polar Desert"],
+    answer: "Antarctic Polar Desert"
+  },
+  {
+    question: "What colour is a 'black box' in an aeroplane?",
+    options: ["Black", "Dark Gray", "Orange", "Red"],
+    answer: "Orange"
+  },
+  {
+    question: "What is the 'fifth ocean' also known as?",
+    options: ["Arctic", "Indian", "Atlantic", "Southern"],
+    answer: "Southern"
+  },
+  {
+    question: "What does the term 'blue-chip stock' refer to?",
+    options: [
+      "Stocks of small-cap companies",
+      "Stocks of well-established, financially sound companies",
+      "High-risk, high-return stocks",
+      "Stocks listed only on foreign exchanges"
+    ],
+    answer: "Stocks of well-established, financially sound companies"
+  },
+  {
+    question: "What does NIFTY represent in the Indian stock market?",
+    options: [
+      "National Fifty",
+      "National Index for Fifty Companies",
+      "Newly Issued Fifty Stocks",
+      "Next Fifty Stocks"
+    ],
+    answer: "National Index for Fifty Companies"
+  }
 ];
+
 
 
 const QuizPage1 = () => {
@@ -105,9 +156,12 @@ const QuizPage1 = () => {
   };
 
   const sendResults = (formattedDuration, finalScore) => {
+  //   console.log("Service ID:", process.env.REACT_APP_EMAILJS_SERVICE_ID);
+  // console.log("Template ID:", process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+  // console.log("Public Key:", process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
     emailjs.send(
-      "service_dlj5kpj",
-      "template_e9jvr1p",
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       {
         participant_name: name,
         participant_slot: slot, // Using default "Slot 1"
@@ -115,9 +169,13 @@ const QuizPage1 = () => {
         quiz_duration: formattedDuration,
         admin_email: "akshay.patra114@gmail.com",
       },
-      "gITwMljiV4mhRuQp6"
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     );
+
+  
+
   };
+
 
   return (
     <div style={{ textAlign: "center", padding: "20px" }} className="quiz-container">

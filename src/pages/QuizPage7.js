@@ -2,60 +2,69 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-  {
-    question: "Which bird is often associated with delivering babies?",
-    options: ["Eagle", "Owl", "Raven", "Stork"],
-    answer: "Stork"
-  },
-  {
-    question: "What do you call a group of owls?",
-    options: ["Herd", "Pack", "School", "Parliament"],
-    answer: "Parliament"
-  },
-  {
-    question: "What is the common term for the substance that makes your eyes water when you cut an onion?",
-    options: ["Acid", "Salt", "Gas", "Sugar"],
-    answer: "Gas"
-  },
-  {
-    question: "What do you call a baby swan?",
-    options: ["Cygnet", "Fawn", "Kid", "Chick"],
-    answer: "Chick"
-  },
-  {
-    question: "Where does a polar bear live?",
-    options: ["South Pole", "Antarctica", "Arctic", "Jungle"],
-    answer: "Arctic"
-  },
-  {
-    question: "Which fruit is technically a berry, but is often considered a vegetable?",
-    options: ["Apple", "Orange", "Banana", "Tomato"],
-    answer: "Tomato"
-  },
-  {
-    question: "What part of the body continues to grow for your entire life?",
-    options: ["Legs", "Arms", "Heart", "Ears and Nose"],
-    answer: "Ears and Nose"
-  },
-  {
-    question: "What is the name of the white part of an egg?",
-    options: ["Yolk", "Shell", "Membrane", "Albumen"],
-    answer: "Albumen"
-  },
-  {
-    question: "Which financial metric measures a company's profitability relative to its revenue?",
-    options: ["Market Cap", "Gross Margin", "Return on Equity (ROE)", "Earnings Per Share (EPS)"],
-    answer: "Gross Margin"
-  },
-  {
-    question: "Which organization regulates the securities market in India?",
-    options: ["Reserve Bank of India (RBI)", "Securities and Exchange Board of India (SEBI)", "Ministry of Finance", "Bombay Stock Exchange (BSE)"],
-    answer: "Securities and Exchange Board of India (SEBI)"
-  }
-];
+    {
+      question: "If you have a round pizza with a radius 'z' and a thickness 'a', what is the pizza's volume?",
+      options: ["πz²a", "2πza", "πza²", "zaπ"],
+      answer: "πz²a"
+    },
+    {
+      question: "What is 1/2 of 2/3 of 3/4 of 4/5 of 5/6 of 6/7 of 7/8 of 8/9 of 9/10 of 1,000?",
+      options: ["100", "500", "50", "10"],
+      answer: "100"
+    },
+    {
+      question: "What has a face and two hands, but no arms or legs?",
+      options: ["A clock", "A doll", "A monkey", "A mirror"],
+      answer: "A clock"
+    },
+    {
+      question: "What has a thumb and four fingers, but is not alive?",
+      options: ["A glove", "A hand", "A puppet", "A sculpture"],
+      answer: "A glove"
+    },
+    {
+      question: "What has an eye, but cannot see?",
+      options: ["A needle", "A potato", "A storm", "A painting"],
+      answer: "A needle"
+    },
+    {
+      question: "What has a neck without a head?",
+      options: ["A bottle", "A shirt", "A giraffe", "A river"],
+      answer: "A bottle"
+    },
+    {
+      question: "What has a mouth but cannot eat?",
+      options: ["A river", "A cave", "A mountain", "A shoe"],
+      answer: "A river"
+    },
+    {
+      question: "What has a foot but cannot walk?",
+      options: ["A ruler", "A mountain", "A sock", "A bed"],
+      answer: "A mountain"
+    },
+    {
+      question: "Which tech company was the first to reach a $2 trillion market valuation?",
+      options: ["Apple", "Microsoft", "Google", "Amazon"],
+      answer: "Apple"
+    },
+    {
+      question: "What is the primary purpose of a hedge fund?",
+      options: [
+        "To hedge against inflation",
+        "To pool investors' money and earn high returns through diverse strategies",
+        "To provide government loans",
+        "To insure against financial losses"
+      ],
+      answer: "To pool investors' money and earn high returns through diverse strategies"
+    }
+  ];
+  
+  
+  
+  
 
 
-const QuizPage2 = () => {
+const QuizPage7 = () => {
   const [name, setName] = useState("");
   const [step, setStep] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -68,7 +77,7 @@ const QuizPage2 = () => {
   // eslint-disable-next-line
   const [quizDuration, setQuizDuration] = useState("");
   
-  const slot = "Slot 2"; // Default slot
+  const slot = "Slot 7"; // Default slot
   
   const emailSentRef = useRef(false);
 
@@ -207,4 +216,4 @@ const QuizPage2 = () => {
   );
 };
 
-export default QuizPage2;
+export default QuizPage7;

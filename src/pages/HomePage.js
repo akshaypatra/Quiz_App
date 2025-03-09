@@ -12,7 +12,7 @@ const HomePage = ({ showAlert }) => {
 
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1>Welcome to the Quiz</h1>
+      <h1>Welcome to the Round 1</h1>
       <h2>Select Slot</h2>
       <select value={slot} onChange={(e) => setSlot(e.target.value)} style={{ padding: "10px", marginBottom: "10px" }}>
         {[...Array(10).keys()].map((i) => (
