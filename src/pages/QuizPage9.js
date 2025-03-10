@@ -167,12 +167,12 @@ const QuizPage9 = () => {
       <h1>Dimagi Dangal Quiz {slot}</h1>
       {step === 1 && (
         <div>
-          <h2>Enter Your Name</h2>
+          <p className="name-input-header">Enter Your ID</p>
           <input 
             type="text" 
             value={name} 
             onChange={(e) => setName(e.target.value)} 
-            placeholder="Your Name" 
+            placeholder="Your ID" 
           />
           <button onClick={handleStartQuiz}>Next</button>
         </div>

@@ -3,57 +3,61 @@ import emailjs from "emailjs-com";
 
 const quizQuestions = [
   {
-    question: "Which bird is often associated with delivering babies?",
-    options: ["Eagle", "Owl", "Raven", "Stork"],
-    answer: "Stork"
+    "question": "Which is the largest continent by area?",
+    "options": ["Africa", "Europe", "Asia", "North America"],
+    "answer": "Asia"
   },
   {
-    question: "What do you call a group of owls?",
-    options: ["Herd", "Pack", "School", "Parliament"],
-    answer: "Parliament"
+    "question": "Who was the first President of India?",
+    "options": ["Dr. B.R. Ambedkar", "Dr. Rajendra Prasad", "Sardar Patel", "Jawaharlal Nehru"],
+    "answer": "Dr. Rajendra Prasad"
   },
   {
-    question: "What is the common term for the substance that makes your eyes water when you cut an onion?",
-    options: ["Acid", "Salt", "Gas", "Sugar"],
-    answer: "Gas"
+    "question": "Which element is represented by the symbol 'O' in the periodic table?",
+    "options": ["Oxygen", "Osmium", "Gold", "Silver"],
+    "answer": "Oxygen"
   },
   {
-    question: "What do you call a baby swan?",
-    options: ["Cygnet", "Fawn", "Kid", "Chick"],
-    answer: "Chick"
+    "question": "Which Indian IT company was founded by Narayana Murthy?",
+    "options": ["TCS", "Wipro", "Infosys", "HCL"],
+    "answer": "Infosys"
   },
   {
-    question: "Where does a polar bear live?",
-    options: ["South Pole", "Antarctica", "Arctic", "Jungle"],
-    answer: "Arctic"
+    "question": "Which is the largest animal on Earth?",
+    "options": ["African Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
+    "answer": "Blue Whale"
   },
   {
-    question: "Which fruit is technically a berry, but is often considered a vegetable?",
-    options: ["Apple", "Orange", "Banana", "Tomato"],
-    answer: "Tomato"
+    "question": "Which sport is often called the 'Gentleman's Game'?",
+    "options": ["Football", "Basketball", "Cricket", "Golf"],
+    "answer": "Cricket"
   },
   {
-    question: "What part of the body continues to grow for your entire life?",
-    options: ["Legs", "Arms", "Heart", "Ears and Nose"],
-    answer: "Ears and Nose"
+    "question": "Which Indian festival is known as the 'Festival of Lights'?",
+    "options": ["Holi", "Diwali", "Navratri", "Eid"],
+    "answer": "Diwali"
   },
   {
-    question: "What is the name of the white part of an egg?",
-    options: ["Yolk", "Shell", "Membrane", "Albumen"],
-    answer: "Albumen"
+    "question": "What does HTTP stand for in website URLs?",
+    "options": [
+      "Hyper Text Transfer Protocol",
+      "High Tech Transmission Process",
+      "Hyperlink Transfer Procedure",
+      "Home Terminal Text Protocol"
+    ],
+    "answer": "Hyper Text Transfer Protocol"
   },
   {
-    question: "Which financial metric measures a company's profitability relative to its revenue?",
-    options: ["Market Cap", "Gross Margin", "Return on Equity (ROE)", "Earnings Per Share (EPS)"],
-    answer: "Gross Margin"
+    "question": "Which planet in our solar system has the most moons?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "answer": "Saturn"
   },
   {
-    question: "Which organization regulates the securities market in India?",
-    options: ["Reserve Bank of India (RBI)", "Securities and Exchange Board of India (SEBI)", "Ministry of Finance", "Bombay Stock Exchange (BSE)"],
-    answer: "Securities and Exchange Board of India (SEBI)"
+    "question": "Who is the founder of Microsoft?",
+    "options": ["Steve Jobs", "Mark Zuckerberg", "Elon Musk", "Bill Gates"],
+    "answer": "Bill Gates"
   }
 ];
-
 
 const QuizPage2 = () => {
   const [name, setName] = useState("");
@@ -163,12 +167,12 @@ const QuizPage2 = () => {
       <h1>Dimagi Dangal Quiz {slot}</h1>
       {step === 1 && (
         <div>
-          <h2>Enter Your Name</h2>
+          <p className="name-input-header">Enter Your ID</p>
           <input 
             type="text" 
             value={name} 
             onChange={(e) => setName(e.target.value)} 
-            placeholder="Your Name" 
+            placeholder="Your ID" 
           />
           <button onClick={handleStartQuiz}>Next</button>
         </div>

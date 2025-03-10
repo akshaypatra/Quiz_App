@@ -2,67 +2,58 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-    {
-      question: "If five cats can catch five mice in five minutes, how many cats does it take to catch 100 mice in 100 minutes?",
-      options: ["5", "20", "100", "10"],
-      answer: "5"
-    },
-    {
-      question: "How many times can you subtract the number 5 from 25?",
-      options: ["5", "1", "Infinite", "0"],
-      answer: "1"
-    },
-    {
-      question: "If you divide 30 by half and add ten, what do you get?",
-      options: ["25", "70", "55", "40"],
-      answer: "70"
-    },
-    {
-      question: "If there are 12 fish and half of them drown, how many are there?",
-      options: ["0", "6", "12", "3"],
-      answer: "12"
-    },
-    {
-      question: "A farmer has 17 sheep, and all but nine die. How many does he have left?",
-      options: ["8", "9", "17", "0"],
-      answer: "9"
-    },
-    {
-      question: "If you have two coins totaling 35 cents, and one of them is not a dime, what are the two coins?",
-      options: ["25 and 10", "30 and 5", "20 and 15", "25 and 10 (again)"],
-      answer: "25 and 10"
-    },
-    {
-      question: "If a brick weighs a pound and half a brick, how much does the brick weigh?",
-      options: ["1.5 pounds", "2 pounds", "1 pound", "3 pounds"],
-      answer: "2 pounds"
-    },
-    {
-      question: "If you multiply all the numbers on a telephone's number pad, what do you get?",
-      options: ["A large number", "0", "45", "362880"],
-      answer: "0"
-    },
-    {
-      question: "What is the purpose of a central bank, like the Reserve Bank of India?",
-      options: [
-        "Regulate commercial banks and issue currency",
-        "Provide loans to small businesses",
-        "Set stock market rules",
-        "Handle foreign direct investments"
-      ],
-      answer: "Regulate commercial banks and issue currency"
-    },
-    {
-      question: "What does 'liquidity' mean in financial terms?",
-      options: [
-        "The ability to convert an asset to cash quickly",
-        "The amount of cash in a company's reserves",
-        "The process of merging companies",
-        "The total debt of an organization"
-      ],
-      answer: "The ability to convert an asset to cash quickly"
-    }
-  ];
+  {
+    "question": "Which planet is known for its beautiful rings?",
+    "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "answer": "Saturn"
+  },
+  {
+    "question": "Which Indian scientist is known as the 'Father of the Indian Space Program'?",
+    "options": ["C.V. Raman", "Homi Bhabha", "Vikram Sarabhai", "Satyendra Nath Bose"],
+    "answer": "Vikram Sarabhai"
+  },
+  {
+    "question": "What is the chemical formula of water?",
+    "options": ["H2O", "CO2", "O2", "NaCl"],
+    "answer": "H2O"
+  },
+  {
+    "question": "Who is the current Prime Minister of the United Kingdom (as of 2024)?",
+    "options": ["Boris Johnson", "Rishi Sunak", "Keir Starmer", "Theresa May"],
+    "answer": "Rishi Sunak"
+  },
+  {
+    "question": "Which country has the highest number of time zones?",
+    "options": ["USA", "Russia", "France", "China"],
+    "answer": "France"
+  },
+  {
+    "question": "Which Indian city is known as the 'City of Joy'?",
+    "options": ["Mumbai", "Chennai", "Kolkata", "Hyderabad"],
+    "answer": "Kolkata"
+  },
+  {
+    "question": "Which blood type is known as the universal donor?",
+    "options": ["A", "B", "O-", "AB+"],
+    "answer": "O-"
+  },
+  {
+    "question": "Which country is the largest producer of coffee?",
+    "options": ["India", "Colombia", "Vietnam", "Brazil"],
+    "answer": "Brazil"
+  },
+  {
+    "question": "Which was the first Indian movie to win an Oscar?",
+    "options": ["Lagaan", "Mother India", "Gandhi", "Slumdog Millionaire"],
+    "answer": "Gandhi"
+  },
+  {
+    "question": "What is the study of fossils called?",
+    "options": ["Geology", "Paleontology", "Archaeology", "Anthropology"],
+    "answer": "Paleontology"
+  }
+];
+
   
   
   
@@ -176,12 +167,12 @@ const QuizPage6 = () => {
       <h1>Dimagi Dangal Quiz {slot}</h1>
       {step === 1 && (
         <div>
-          <h2>Enter Your Name</h2>
+          <p className="name-input-header">Enter Your ID</p>
           <input 
             type="text" 
             value={name} 
             onChange={(e) => setName(e.target.value)} 
-            placeholder="Your Name" 
+            placeholder="Your ID" 
           />
           <button onClick={handleStartQuiz}>Next</button>
         </div>

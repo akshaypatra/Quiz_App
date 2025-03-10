@@ -2,67 +2,58 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-    {
-      question: "What is the name of the small piece of plastic on the end of a shoelace?",
-      options: ["Tip", "Tag", "End", "Aglet"],
-      answer: "Aglet"
-    },
-    {
-      question: "Which animal is known as the 'ship of the desert'?",
-      options: ["Horse", "Donkey", "Elephant", "Camel"],
-      answer: "Camel"
-    },
-    {
-      question: "What is the name of the dot over the lowercase 'i' and 'j'?",
-      options: ["Point", "Dot", "Mark", "Tittle"],
-      answer: "Tittle"
-    },
-    {
-      question: "What is a group of crows called?",
-      options: ["Pack", "Herd", "Flock", "Murder"],
-      answer: "Murder"
-    },
-    {
-      question: "What do you call the space between your eyebrows?",
-      options: ["Forehead", "Bridge", "Temple", "Glabella"],
-      answer: "Glabella"
-    },
-    {
-      question: "What is the name of the part of a fork that you use to stab food?",
-      options: ["Handle", "Head", "Body", "Tines"],
-      answer: "Tines"
-    },
-    {
-      question: "What is the name of the small pocket inside the larger jeans pocket?",
-      options: ["Coin pocket", "Key pocket", "Watch pocket", "All of the above"],
-      answer: "All of the above"
-    },
-    {
-      question: "What is the difference between 'affect' and 'effect'?",
-      options: [
-        "Both are nouns",
-        "Both are verbs",
-        "Affect is a noun, effect is a verb",
-        "Affect is a verb, effect is a noun"
-      ],
-      answer: "Affect is a verb, effect is a noun"
-    },
-    {
-      question: "What does an increase in bond yields typically indicate about the economy?",
-      options: [
-        "A recession is coming",
-        "Higher inflation expectations",
-        "Lower interest rates",
-        "Government reducing borrowing"
-      ],
-      answer: "Higher inflation expectations"
-    },
-    {
-      question: "What was the name of the first artificial satellite launched into space?",
-      options: ["Voyager 1", "Sputnik 1", "Apollo 11", "Explorer 1"],
-      answer: "Sputnik 1"
-    }
-  ];
+  {
+    "question": "Which is the smallest country in the world by land area?",
+    "options": ["Monaco", "Vatican City", "Maldives", "Liechtenstein"],
+    "answer": "Vatican City"
+  },
+  {
+    "question": "Who wrote the national anthem of India?",
+    "options": ["Bankim Chandra Chatterjee", "Rabindranath Tagore", "Sarojini Naidu", "Subhash Chandra Bose"],
+    "answer": "Rabindranath Tagore"
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Ag", "Au", "Pb", "Fe"],
+    "answer": "Au"
+  },
+  {
+    "question": "Which company is known for its search engine and the Android operating system?",
+    "options": ["Apple", "Microsoft", "Google", "Amazon"],
+    "answer": "Google"
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?",
+    "options": ["Iron", "Platinum", "Diamond", "Quartz"],
+    "answer": "Diamond"
+  },
+  {
+    "question": "Which is the highest civilian award in India?",
+    "options": ["Padma Bhushan", "Padma Shri", "Bharat Ratna", "Param Vir Chakra"],
+    "answer": "Bharat Ratna"
+  },
+  {
+    "question": "Which animal is the national emblem of India?",
+    "options": ["Lion", "Tiger", "Peacock", "Elephant"],
+    "answer": "Lion"
+  },
+  {
+    "question": "Which Indian state is famous for its tea gardens?",
+    "options": ["Punjab", "Kerala", "Assam", "Rajasthan"],
+    "answer": "Assam"
+  },
+  {
+    "question": "Who invented the telephone?",
+    "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "James Watt"],
+    "answer": "Alexander Graham Bell"
+  },
+  {
+    "question": "Which ocean is the largest by surface area?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+    "answer": "Pacific Ocean"
+  }
+];
+
   
 
 
@@ -174,12 +165,12 @@ const QuizPage3 = () => {
       <h1>Dimagi Dangal Quiz {slot}</h1>
       {step === 1 && (
         <div>
-          <h2>Enter Your Name</h2>
+          <p className="name-input-header">Enter Your ID</p>
           <input 
             type="text" 
             value={name} 
             onChange={(e) => setName(e.target.value)} 
-            placeholder="Your Name" 
+            placeholder="Your ID" 
           />
           <button onClick={handleStartQuiz}>Next</button>
         </div>
@@ -217,5 +208,4 @@ const QuizPage3 = () => {
     </div>
   );
 };
-
 export default QuizPage3;

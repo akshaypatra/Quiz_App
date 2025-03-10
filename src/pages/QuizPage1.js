@@ -3,66 +3,57 @@ import emailjs from "emailjs-com";
 
 const quizQuestions = [
   {
-    question: "Which layer of the Earth is made up of solid rock?",
-    options: ["Outer core", "Inner core", "Mantle", "Crust"],
-    answer: "Crust"
+    "question": "Which is the longest river in the world?",
+    "options": ["Amazon River", "Yangtze River", "Mississippi River", "Nile River"],
+    "answer": "Nile River"
   },
   {
-    question: "What is the largest bone in the human body?",
-    options: ["Humerus", "Tibia", "Radius", "Femur"],
-    answer: "Femur"
+    "question": "What is the capital of Maharashtra, India?",
+    "options": ["Pune", "Nagpur", "Mumbai", "Nashik"],
+    "answer": "Mumbai"
   },
   {
-    question: "Who was the first female Prime Minister of the United Kingdom?",
-    options: ["Angela Merkel", "Indira Gandhi", "Golda Meir", "Margaret Thatcher"],
-    answer: "Margaret Thatcher"
+    "question": "Which planet is known as the 'Red Planet'?",
+    "options": ["Earth", "Venus", "Mars", "Jupiter"],
+    "answer": "Mars"
   },
   {
-    question: "What is the capital of Australia?",
-    options: ["Sydney", "Melbourne", "Canberra", "Perth"],
-    answer: "Canberra"
+    "question": "Who is known as the 'Missile Man of India'?",
+    "options": ["Vikram Sarabhai", "Dr. A.P.J. Abdul Kalam", "C.V. Raman", "Homi Bhabha"],
+    "answer": "Dr. A.P.J. Abdul Kalam"
   },
   {
-    question: "Which country is known as the 'Land of the Rising Sun'?",
-    options: ["China", "Korea", "Japan", "Thailand"],
-    answer: "Japan"
+    "question": "What does CPU stand for in computers?",
+    "options": ["Central Processing Unit", "Computer Power Utility", "Control Processing Unit", "Central Program Unit"],
+    "answer": "Central Processing Unit"
   },
   {
-    question: "What is the largest desert in the world (by area)?",
-    options: ["Sahara Desert", "Arabian Desert", "Gobi Desert", "Antarctic Polar Desert"],
-    answer: "Antarctic Polar Desert"
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"],
+    "answer": "Nitrogen"
   },
   {
-    question: "What colour is a 'black box' in an aeroplane?",
-    options: ["Black", "Dark Gray", "Orange", "Red"],
-    answer: "Orange"
+    "question": "Which Indian company owns the Tata Nano car?",
+    "options": ["Mahindra", "Hyundai", "Tata Motors", "Maruti Suzuki"],
+    "answer": "Tata Motors"
   },
   {
-    question: "What is the 'fifth ocean' also known as?",
-    options: ["Arctic", "Indian", "Atlantic", "Southern"],
-    answer: "Southern"
+    "question": "Which country hosted the first modern Olympic Games in 1896?",
+    "options": ["France", "United Kingdom", "Greece", "United States"],
+    "answer": "Greece"
   },
   {
-    question: "What does the term 'blue-chip stock' refer to?",
-    options: [
-      "Stocks of small-cap companies",
-      "Stocks of well-established, financially sound companies",
-      "High-risk, high-return stocks",
-      "Stocks listed only on foreign exchanges"
-    ],
-    answer: "Stocks of well-established, financially sound companies"
+    "question": "Which Indian state has the highest literacy rate?",
+    "options": ["Kerala", "Tamil Nadu", "Maharashtra", "Goa"],
+    "answer": "Kerala"
   },
   {
-    question: "What does NIFTY represent in the Indian stock market?",
-    options: [
-      "National Fifty",
-      "National Index for Fifty Companies",
-      "Newly Issued Fifty Stocks",
-      "Next Fifty Stocks"
-    ],
-    answer: "National Index for Fifty Companies"
+    "question": "What does GDP stand for in economics?",
+    "options": ["Gross Domestic Product", "General Debt Policy", "Government Development Plan", "Global Development Projection"],
+    "answer": "Gross Domestic Product"
   }
 ];
+
 
 
 
@@ -182,12 +173,12 @@ const QuizPage1 = () => {
       <h1>Dimagi Dangal Quiz {slot}</h1>
       {step === 1 && (
         <div>
-          <h2>Enter Your Name</h2>
+          <p className="name-input-header">Enter Your ID</p>
           <input 
             type="text" 
             value={name} 
             onChange={(e) => setName(e.target.value)} 
-            placeholder="Your Name" 
+            placeholder="Your ID" 
           />
           <button onClick={handleStartQuiz}>Next</button>
         </div>

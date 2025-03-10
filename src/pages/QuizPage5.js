@@ -2,67 +2,58 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-    {
-      question: "What has no feet, but can travel around the world?",
-      options: ["A thought", "A rumor", "A letter", "A wind"],
-      answer: "A letter"
-    },
-    {
-      question: "What is always hungry, it must always be fed, the finger you touch, will soon turn red?",
-      options: ["A fire", "A baby", "A dragon", "A stove"],
-      answer: "A fire"
-    },
-    {
-      question: "What has no substance, but can still be seen?",
-      options: ["A ghost", "A shadow", "A dream", "A thought"],
-      answer: "A shadow"
-    },
-    {
-      question: "What is the only thing that can be both given and kept?",
-      options: ["A gift", "A secret", "A promise", "Advice"],
-      answer: "A promise"
-    },
-    {
-      question: "What has an ear but cannot hear?",
-      options: ["A cornfield", "A jug", "A phone", "A rabbit"],
-      answer: "A cornfield"
-    },
-    {
-      question: "What has a tongue but cannot taste?",
-      options: ["A shoe", "A bell", "A flame", "A river"],
-      answer: "A shoe"
-    },
-    {
-      question: "What gets bigger the more you take away?",
-      options: ["A hole", "A debt", "A balloon", "A shadow"],
-      answer: "A hole"
-    },
-    {
-      question: "What is the thing that you can't see but is always in front of you?",
-      options: ["The future", "The wind", "Your nose", "A ghost"],
-      answer: "The future"
-    },
-    {
-      question: "What does the term 'escape velocity' mean?",
-      options: [
-        "The speed at which a rocket leaves the atmosphere",
-        "The minimum velocity required to leave a planet's gravitational pull",
-        "The maximum velocity of a space shuttle",
-        "The speed needed to enter orbit"
-      ],
-      answer: "The minimum velocity required to leave a planet's gravitational pull"
-    },
-    {
-      question: "What is the role of a satellite's 'payload'?",
-      options: [
-        "Provide navigation",
-        "Carry instruments for its mission purpose",
-        "Measure fuel levels",
-        "Ensure communication with Earth"
-      ],
-      answer: "Carry instruments for its mission purpose"
-    }
-  ];
+  {
+    "question": "Who was the first man to walk on the Moon?",
+    "options": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "Michael Collins"],
+    "answer": "Neil Armstrong"
+  },
+  {
+    "question": "What is the currency of Japan?",
+    "options": ["Yuan", "Won", "Yen", "Rupee"],
+    "answer": "Yen"
+  },
+  {
+    "question": "Which is the most spoken language in the world?",
+    "options": ["English", "Spanish", "Mandarin Chinese", "Hindi"],
+    "answer": "Mandarin Chinese"
+  },
+  {
+    "question": "Which city is known as the 'Silicon Valley of India'?",
+    "options": ["Hyderabad", "Pune", "Bangalore", "Chennai"],
+    "answer": "Bangalore"
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "options": ["Alexander Fleming", "Marie Curie", "Louis Pasteur", "Joseph Lister"],
+    "answer": "Alexander Fleming"
+  },
+  {
+    "question": "Which Mughal emperor built the Taj Mahal?",
+    "options": ["Akbar", "Jahangir", "Shah Jahan", "Aurangzeb"],
+    "answer": "Shah Jahan"
+  },
+  {
+    "question": "Which Indian state has the largest population?",
+    "options": ["Maharashtra", "Uttar Pradesh", "West Bengal", "Bihar"],
+    "answer": "Uttar Pradesh"
+  },
+  {
+    "question": "What does USB stand for in technology?",
+    "options": ["Universal Serial Bus", "Ultra Speed Band", "United System Backup", "Universal Software Bridge"],
+    "answer": "Universal Serial Bus"
+  },
+  {
+    "question": "What is the national bird of India?",
+    "options": ["Kingfisher", "Peacock", "Eagle", "Parrot"],
+    "answer": "Peacock"
+  },
+  {
+    "question": "Which vitamin is known as the 'sunshine vitamin'?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin D"
+  }
+];
+
   
   
 
@@ -175,12 +166,12 @@ const QuizPage5 = () => {
       <h1>Dimagi Dangal Quiz {slot}</h1>
       {step === 1 && (
         <div>
-          <h2>Enter Your Name</h2>
+          <p className="name-input-header">Enter Your ID</p>
           <input 
             type="text" 
             value={name} 
             onChange={(e) => setName(e.target.value)} 
-            placeholder="Your Name" 
+            placeholder="Your ID" 
           />
           <button onClick={handleStartQuiz}>Next</button>
         </div>

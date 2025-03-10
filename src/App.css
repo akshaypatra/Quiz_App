@@ -1,7 +1,5 @@
 body {
   font-family: 'Arial', sans-serif;
-  background: #e3c9c9;
-  
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -14,21 +12,75 @@ body {
   -moz-user-select: none; /* Disable selection for Mozilla browsers */
   -ms-user-select: none; /* Disable selection for IE/Edge */
   user-select: none;
+  
 }
 
-.heading{
-  color: black;
+.App{
+  width: 100vw;
 }
+
+
+.header-div-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin: 0;
+}
+.dimagi-dangal-logo{
+  height: 500px;
+  width: auto;
+  margin: -130px;
+}
+.glow-text {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #272726;
+  text-shadow: 
+      0 0 3px #222121,  
+      0 0 0px #ed6803, 
+      0 0 0px #f9a202;
+  font-family:cursive;
+  margin: -20px;
+}
+
+.glow-text2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #fcb572; /* Light golden brown */
+  text-shadow: 
+      0 0 3px #eb711b,  
+      0 0 6px #d0810be9,  
+      0 0 2px #060606; 
+  font-family: 'Poppins', sans-serif;
+}
+
 .content-container {
   display: flex;  /* Arrange elements in a row */
   align-items: center; /* Align vertically */
   justify-content: space-between; /* Space between logos and quiz */
   width: 100%;
-  height: 100vh; /* Full screen height */
+  height: auto; /* Full screen height */
+
   padding: 20px;
 }
 
-.dimagi-dangal-logo-div, 
+.persona-logo{ 
+  height:100px;
+  width: 150px;
+}
+.persona-logo-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.persona-logo-div, 
 .Yuvarth-logo-div {
     flex: 1; 
     display: flex;
@@ -36,19 +88,31 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .App{
+    padding: 20px;
+  }
   .content-container {
       flex-direction: column; 
-      height: 100vh;
+      height: auto;
+      width:auto;
   }
 
-  .dimagi-dangal-logo-div, 
+  .persona-logo-div, 
   .Yuvarth-logo-div {
       flex: none;
   }
 
-  .quiz-container {
-      flex: none;
-      padding: 15px;
+
+  .quiz-container1{
+
+    flex: 4;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    user-select: none;
+    border-radius:10px;
+    padding: 15px;
   }
 
 
@@ -59,12 +123,13 @@ body {
   background-size: cover;
   flex: 3;
   width: 100%;
+  min-height:40vh;
   max-width: 500px;
-  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.492);
   text-align: center;
   user-select: none;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius:10px;
+  padding: 40px;
 }
 
 
@@ -74,7 +139,7 @@ body {
   width: 90%;
   max-width: 500px;
   padding: 20px;
-  border-radius: 10px;
+  border-radius:10px;
   box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   user-select: none;

@@ -2,63 +2,63 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-    {
-      question: "If you have a round pizza with a radius 'z' and a thickness 'a', what is the pizza's volume?",
-      options: ["πz²a", "2πza", "πza²", "zaπ"],
-      answer: "πz²a"
-    },
-    {
-      question: "What is 1/2 of 2/3 of 3/4 of 4/5 of 5/6 of 6/7 of 7/8 of 8/9 of 9/10 of 1,000?",
-      options: ["100", "500", "50", "10"],
-      answer: "100"
-    },
-    {
-      question: "What has a face and two hands, but no arms or legs?",
-      options: ["A clock", "A doll", "A monkey", "A mirror"],
-      answer: "A clock"
-    },
-    {
-      question: "What has a thumb and four fingers, but is not alive?",
-      options: ["A glove", "A hand", "A puppet", "A sculpture"],
-      answer: "A glove"
-    },
-    {
-      question: "What has an eye, but cannot see?",
-      options: ["A needle", "A potato", "A storm", "A painting"],
-      answer: "A needle"
-    },
-    {
-      question: "What has a neck without a head?",
-      options: ["A bottle", "A shirt", "A giraffe", "A river"],
-      answer: "A bottle"
-    },
-    {
-      question: "What has a mouth but cannot eat?",
-      options: ["A river", "A cave", "A mountain", "A shoe"],
-      answer: "A river"
-    },
-    {
-      question: "What has a foot but cannot walk?",
-      options: ["A ruler", "A mountain", "A sock", "A bed"],
-      answer: "A mountain"
-    },
-    {
-      question: "Which tech company was the first to reach a $2 trillion market valuation?",
-      options: ["Apple", "Microsoft", "Google", "Amazon"],
-      answer: "Apple"
-    },
-    {
-      question: "What is the primary purpose of a hedge fund?",
-      options: [
-        "To hedge against inflation",
-        "To pool investors' money and earn high returns through diverse strategies",
-        "To provide government loans",
-        "To insure against financial losses"
-      ],
-      answer: "To pool investors' money and earn high returns through diverse strategies"
-    }
-  ];
-  
+  {
+    "question": "Which is the longest railway platform in the world?",
+    "options": ["Gorakhpur", "Kharagpur", "Hubli", "Prayagraj"],
+    "answer": "Hubli"
+  },
+  {
+    "question": "Which Indian company became the first to reach a $200 billion market capitalization?",
+    "options": ["Reliance Industries", "Tata Group", "Infosys", "HDFC Bank"],
+    "answer": "Reliance Industries"
+  },
+  {
+    "question": "Who invented the World Wide Web (WWW)?",
+    "options": ["Bill Gates", "Tim Berners-Lee", "Steve Jobs", "Linus Torvalds"],
+    "answer": "Tim Berners-Lee"
+  },
+  {
+    "question": "Which country was formerly known as Persia?",
+    "options": ["Iraq", "Iran", "Syria", "Lebanon"],
+    "answer": "Iran"
+  },
+  {
+    "question": "Which is the tallest mountain in India?",
+    "options": ["K2", "Kangchenjunga", "Nanda Devi", "Mount Everest"],
+    "answer": "Kangchenjunga"
+  },
+  {
+    "question": "Which Indian city is known as the 'Pink City'?",
+    "options": ["Jaipur", "Jodhpur", "Udaipur", "Bikaner"],
+    "answer": "Jaipur"
+  },
+  {
+    "question": "Who is the author of the book 'Wings of Fire'?",
+    "options": ["Chetan Bhagat", "R.K. Narayan", "Dr. A.P.J. Abdul Kalam", "Arundhati Roy"],
+    "answer": "Dr. A.P.J. Abdul Kalam"
+  },
+  {
+    "question": "Which Indian state has the longest coastline?",
+    "options": ["Maharashtra", "Tamil Nadu", "Andhra Pradesh", "Gujarat"],
+    "answer": "Gujarat"
+  },
+  {
+    "question": "What does ISRO stand for?",
+    "options": [
+      "Indian Science Research Organization",
+      "Indian Space Research Organization",
+      "International Satellite Research Organization",
+      "Indian Satellite Research Organization"
+    ],
+    "answer": "Indian Space Research Organization"
+  },
+  {
+    "question": "Which gas do plants absorb during photosynthesis?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Carbon Dioxide"
+  }
+];
+
   
   
   
@@ -172,12 +172,12 @@ const QuizPage7 = () => {
       <h1>Dimagi Dangal Quiz {slot}</h1>
       {step === 1 && (
         <div>
-          <h2>Enter Your Name</h2>
+          <p className="name-input-header">Enter Your ID</p>
           <input 
             type="text" 
             value={name} 
             onChange={(e) => setName(e.target.value)} 
-            placeholder="Your Name" 
+            placeholder="Your ID" 
           />
           <button onClick={handleStartQuiz}>Next</button>
         </div>

@@ -37,9 +37,16 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-         <section className='content-container'>
-            <div className="dimagi-dangal-logo-div">
+        <section className='header-container'>
+            <div className='header-div-1'>
               <img className='dimagi-dangal-logo' src="./images/Dimaagi_Dangal__2_-removebg-preview.png" alt="yuvarth" />
+              <h1 className='glow-text'>Dimagi Dangal</h1>
+            </div>
+        </section>
+         <section className='content-container'>
+            <div className="persona-logo-div">
+              <img className='persona-logo' src="./images/persona_logo.png" alt="yuvarth" />
+              <h5 className='persona-logo-label'>Persona Fest 2025</h5>
             </div>
             <div className='quiz-container1'>
                   <Routes>
@@ -62,6 +69,10 @@ function App() {
             <div className="Yuvarth-logo-div">
               <img className='Yuvarth-logo' src="./images/Dimaagi_Dangal__1_-removebg-preview.png" alt="yuvarth" />
             </div>
+          </section>
+          <section>
+          <p className='glow-text2'>Organised By YUVARTH</p>
+          <p style={{textAlign:"center"}}>Business and Entrepreneurship Club of MIT ADT</p>
           </section>
       </div>
     </BrowserRouter>

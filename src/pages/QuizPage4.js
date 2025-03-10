@@ -2,57 +2,57 @@ import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
 const quizQuestions = [
-    {
-      question: "What is a 'palindrome'?",
-      options: ["A type of insect", "A type of flower", "A word that reads the same backward as forward", "A word that reads the same backward as forward"],
-      answer: "A word that reads the same backward as forward"
-    },
-    {
-      question: "What does the word 'ubiquitous' mean?",
-      options: ["Rare", "Unique", "Common", "Everywhere"],
-      answer: "Everywhere"
-    },
-    {
-      question: "What is an 'oxymoron'?",
-      options: ["A type of animal", "A type of plant", "A figure of speech that contradicts itself", "A figure of speech that contradicts itself"],
-      answer: "A figure of speech that contradicts itself"
-    },
-    {
-      question: "What is the meaning of 'ambiguous'?",
-      options: ["Clear", "Simple", "Unclear", "Unclear"],
-      answer: "Unclear"
-    },
-    {
-      question: "Who was the first person to set foot on the moon?",
-      options: ["Yuri Gagarin", "Neil Armstrong", "Buzz Aldrin", "Alan Shepard"],
-      answer: "Neil Armstrong"
-    },
-    {
-      question: "Which country's space agency is known as Roscosmos?",
-      options: ["USA", "Russia", "China", "Japan"],
-      answer: "Russia"
-    },
-    {
-      question: "What is a 'simile'?",
-      options: ["A type of poem", "A type of song", "A comparison using 'like' or 'as'", "A comparison using 'like' or 'as'"],
-      answer: "A comparison using 'like' or 'as'"
-    },
-    {
-      question: "If you have two coins totalling 35 cents, and one of them is not a dime, what are the two coins?",
-      options: ["25 and 10", "30 and 5", "20 and 15", "25 and 20"],
-      answer: "25 and 10"
-    },
-    {
-      question: "What has a head and a tail, but no body?",
-      options: ["A coin", "A snake", "A fish", "A rope"],
-      answer: "A coin"
-    },
-    {
-      question: "What has one horn and one eye?",
-      options: ["A rhinoceros", "A unicorn", "A cyclops", "A bicycle"],
-      answer: "A cyclops"
-    }
-  ];
+  {
+    "question": "Who was the first man to walk on the Moon?",
+    "options": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "Michael Collins"],
+    "answer": "Neil Armstrong"
+  },
+  {
+    "question": "What is the currency of Japan?",
+    "options": ["Yuan", "Won", "Yen", "Rupee"],
+    "answer": "Yen"
+  },
+  {
+    "question": "Which is the most spoken language in the world?",
+    "options": ["English", "Spanish", "Mandarin Chinese", "Hindi"],
+    "answer": "Mandarin Chinese"
+  },
+  {
+    "question": "Which city is known as the 'Silicon Valley of India'?",
+    "options": ["Hyderabad", "Pune", "Bangalore", "Chennai"],
+    "answer": "Bangalore"
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "options": ["Alexander Fleming", "Marie Curie", "Louis Pasteur", "Joseph Lister"],
+    "answer": "Alexander Fleming"
+  },
+  {
+    "question": "Which Mughal emperor built the Taj Mahal?",
+    "options": ["Akbar", "Jahangir", "Shah Jahan", "Aurangzeb"],
+    "answer": "Shah Jahan"
+  },
+  {
+    "question": "Which Indian state has the largest population?",
+    "options": ["Maharashtra", "Uttar Pradesh", "West Bengal", "Bihar"],
+    "answer": "Uttar Pradesh"
+  },
+  {
+    "question": "What does USB stand for in technology?",
+    "options": ["Universal Serial Bus", "Ultra Speed Band", "United System Backup", "Universal Software Bridge"],
+    "answer": "Universal Serial Bus"
+  },
+  {
+    "question": "What is the national bird of India?",
+    "options": ["Kingfisher", "Peacock", "Eagle", "Parrot"],
+    "answer": "Peacock"
+  },
+  {
+    "question": "Which vitamin is known as the 'sunshine vitamin'?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin D"
+  }
+];
   
   
 
@@ -165,12 +165,12 @@ const QuizPage4 = () => {
       <h1>Dimagi Dangal Quiz {slot}</h1>
       {step === 1 && (
         <div>
-          <h2>Enter Your Name</h2>
+          <p className="name-input-header">Enter Your ID</p>
           <input 
             type="text" 
             value={name} 
             onChange={(e) => setName(e.target.value)} 
-            placeholder="Your Name" 
+            placeholder="Your ID" 
           />
           <button onClick={handleStartQuiz}>Next</button>
         </div>
