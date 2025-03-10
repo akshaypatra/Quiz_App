@@ -11,6 +11,8 @@ const HomePage = ({ showAlert }) => {
   };
 
   return (
+    <div>
+    
     <div style={{ textAlign: "center", padding: "20px" }}>
       <h1>Welcome to the Round 1</h1>
       <h2>Select Slot</h2>
@@ -23,6 +25,7 @@ const HomePage = ({ showAlert }) => {
       <button onClick={handleStart} style={{ padding: "10px 20px", fontSize: "16px" }}>
         Submit
       </button>
+    </div>
     </div>
   );
 };

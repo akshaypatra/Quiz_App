@@ -37,22 +37,31 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-          <section className='quiz-container'>
-                <Routes>
-                    <Route path='/' element={<HomePage showAlert={showAlert}/> }/>
-                    <Route path='/slot_1' element={<QuizPage1 showAlert={showAlert}/>} />
-                    <Route path='/slot_2' element={<QuizPage2 showAlert={showAlert}/>} />
-                    <Route path='/slot_3' element={<QuizPage3 showAlert={showAlert}/>} />
-                    <Route path='/slot_4' element={<QuizPage4 showAlert={showAlert}/>} />
-                    <Route path='/slot_5' element={<QuizPage5 showAlert={showAlert}/>} />
-                    <Route path='/slot_6' element={<QuizPage6 showAlert={showAlert}/>} />
-                    <Route path='/slot_7' element={<QuizPage7 showAlert={showAlert}/>} />
-                    <Route path='/slot_8' element={<QuizPage8 showAlert={showAlert}/>} />
-                    <Route path='/slot_9' element={<QuizPage9 showAlert={showAlert}/>} />
-                    <Route path='/slot_10' element={<QuizPage10 showAlert={showAlert}/>} />
-                    
+         <section className='content-container'>
+            <div className="dimagi-dangal-logo-div">
+              <img className='dimagi-dangal-logo' src="./images/Dimaagi_Dangal__2_-removebg-preview.png" alt="yuvarth" />
+            </div>
+            <div className='quiz-container1'>
+                  <Routes>
+                      <Route path='/' element={<HomePage showAlert={showAlert}/> }/>
+                      <Route path='/slot_1' element={<QuizPage1 showAlert={showAlert}/>} />
+                      <Route path='/slot_2' element={<QuizPage2 showAlert={showAlert}/>} />
+                      <Route path='/slot_3' element={<QuizPage3 showAlert={showAlert}/>} />
+                      <Route path='/slot_4' element={<QuizPage4 showAlert={showAlert}/>} />
+                      <Route path='/slot_5' element={<QuizPage5 showAlert={showAlert}/>} />
+                      <Route path='/slot_6' element={<QuizPage6 showAlert={showAlert}/>} />
+                      <Route path='/slot_7' element={<QuizPage7 showAlert={showAlert}/>} />
+                      <Route path='/slot_8' element={<QuizPage8 showAlert={showAlert}/>} />
+                      <Route path='/slot_9' element={<QuizPage9 showAlert={showAlert}/>} />
+                      <Route path='/slot_10' element={<QuizPage10 showAlert={showAlert}/>} />
+                      
 
-                </Routes>
+                  </Routes>
+            </div>
+            
+            <div className="Yuvarth-logo-div">
+              <img className='Yuvarth-logo' src="./images/Dimaagi_Dangal__1_-removebg-preview.png" alt="yuvarth" />
+            </div>
           </section>
       </div>
     </BrowserRouter>
