@@ -3,54 +3,59 @@ import emailjs from "emailjs-com";
 
 const quizQuestions = [
   {
-    "question": "Who was the first man to walk on the Moon?",
-    "options": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "Michael Collins"],
-    "answer": "Neil Armstrong"
+    "question": "Which Indian freedom fighter is known as the 'Iron Man of India'?",
+    "options": ["Mahatma Gandhi", "Sardar Vallabhbhai Patel", "Subhas Chandra Bose", "Jawaharlal Nehru"],
+    "answer": "Sardar Vallabhbhai Patel"
   },
   {
-    "question": "What is the currency of Japan?",
-    "options": ["Yuan", "Won", "Yen", "Rupee"],
-    "answer": "Yen"
+    "question": "What is the largest organ in the human body?",
+    "options": ["Heart", "Liver", "Skin", "Lungs"],
+    "answer": "Skin"
   },
   {
-    "question": "Which is the most spoken language in the world?",
-    "options": ["English", "Spanish", "Mandarin Chinese", "Hindi"],
-    "answer": "Mandarin Chinese"
+    "question": "Which company was the first to reach a $1 trillion market capitalization?",
+    "options": ["Amazon", "Apple", "Microsoft", "Google"],
+    "answer": "Apple"
   },
   {
-    "question": "Which city is known as the 'Silicon Valley of India'?",
-    "options": ["Hyderabad", "Pune", "Bangalore", "Chennai"],
-    "answer": "Bangalore"
+    "question": "Which year did India gain independence from British rule?",
+    "options": ["1945", "1947", "1950", "1962"],
+    "answer": "1947"
   },
   {
-    "question": "Who discovered penicillin?",
-    "options": ["Alexander Fleming", "Marie Curie", "Louis Pasteur", "Joseph Lister"],
-    "answer": "Alexander Fleming"
+    "question": "Which sport does the term 'Love' refer to in the scoring system?",
+    "options": ["Badminton", "Tennis", "Table Tennis", "Squash"],
+    "answer": "Tennis"
   },
   {
-    "question": "Which Mughal emperor built the Taj Mahal?",
-    "options": ["Akbar", "Jahangir", "Shah Jahan", "Aurangzeb"],
-    "answer": "Shah Jahan"
+    "question": "Who discovered gravity?",
+    "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Johannes Kepler"],
+    "answer": "Isaac Newton"
   },
   {
-    "question": "Which Indian state has the largest population?",
-    "options": ["Maharashtra", "Uttar Pradesh", "West Bengal", "Bihar"],
-    "answer": "Uttar Pradesh"
+    "question": "What does RBI stand for in India?",
+    "options": [
+      "Reserve Bank of India",
+      "Rural Banking Institution",
+      "Retail Banking Industry",
+      "Revenue Bureau of India"
+    ],
+    "answer": "Reserve Bank of India"
   },
   {
-    "question": "What does USB stand for in technology?",
-    "options": ["Universal Serial Bus", "Ultra Speed Band", "United System Backup", "Universal Software Bridge"],
-    "answer": "Universal Serial Bus"
+    "question": "Which Indian city is known as the 'City of Lakes'?",
+    "options": ["Bhopal", "Udaipur", "Nainital", "Srinagar"],
+    "answer": "Udaipur"
   },
   {
-    "question": "What is the national bird of India?",
-    "options": ["Kingfisher", "Peacock", "Eagle", "Parrot"],
-    "answer": "Peacock"
+    "question": "Which metal is used to make the filament in an electric bulb?",
+    "options": ["Copper", "Aluminium", "Tungsten", "Iron"],
+    "answer": "Tungsten"
   },
   {
-    "question": "Which vitamin is known as the 'sunshine vitamin'?",
-    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
-    "answer": "Vitamin D"
+    "question": "Which Indian IT company was founded by Azim Premji?",
+    "options": ["Infosys", "HCL", "Wipro", "TCS"],
+    "answer": "Wipro"
   }
 ];
 
