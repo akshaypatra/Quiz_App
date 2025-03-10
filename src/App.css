@@ -37,10 +37,10 @@ body {
   font-weight: bold;
   text-align: center;
   color: #272726;
-  text-shadow: 
+  /* text-shadow: 
       0 0 3px #222121,  
       0 0 0px #ed6803, 
-      0 0 0px #f9a202;
+      0 0 0px #f9a202; */
   font-family:cursive;
   margin: -20px;
 }
@@ -68,8 +68,8 @@ body {
 }
 
 .persona-logo{ 
-  height:100px;
-  width: 150px;
+  height:200px;
+  width: auto;
 }
 .persona-logo-div{
   display: flex;

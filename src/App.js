@@ -40,13 +40,12 @@ function App() {
         <section className='header-container'>
             <div className='header-div-1'>
               <img className='dimagi-dangal-logo' src="./images/Dimaagi_Dangal__2_-removebg-preview.png" alt="yuvarth" />
-              <h1 className='glow-text'>Dimagi Dangal</h1>
+              <h1 className='glow-text'>Dimaagi Dangal</h1>
             </div>
         </section>
          <section className='content-container'>
             <div className="persona-logo-div">
-              <img className='persona-logo' src="./images/persona_logo.png" alt="yuvarth" />
-              <h5 className='persona-logo-label'>Persona Fest 2025</h5>
+              <img className='persona-logo' src="./images/persona-logo2.png" alt="yuvarth" />
             </div>
             <div className='quiz-container1'>
                   <Routes>

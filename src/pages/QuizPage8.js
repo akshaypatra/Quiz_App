@@ -170,7 +170,7 @@ const QuizPage8 = () => {
   };
   return (
     <div style={{ textAlign: "center", padding: "20px" }} className="quiz-container">
-      <h1>Dimagi Dangal Quiz {slot}</h1>
+      <h1>Dimaagi Dangal Quiz {slot}</h1>
       {step === 1 && (
         <div>
           <p className="name-input-header">Enter Your ID</p>
