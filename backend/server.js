@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// IMPORTANT: Add build folder from frontend to serve static files
 // Serve static files from the build folder
 app.use(express.static(path.join(__dirname, "build")));
 
@@ -12,5 +13,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server 🚀 is running on http://localhost:${PORT}`);
 });
