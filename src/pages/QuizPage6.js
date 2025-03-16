@@ -5,7 +5,7 @@ const quizQuestions = [
   {
     "question": "Which planet is known for its beautiful rings?",
     "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
-    "answer": "Saturn"
+    "answer": "Saturn" 
   },
   {
     "question": "Which Indian scientist is known as the 'Father of the Indian Space Program'?",
